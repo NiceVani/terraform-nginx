@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Keyboard World</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 800px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        color: #ffcc70;
+        animation: slideIn 1.5s ease-in-out;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-top: 10px;
+        animation: fadeIn 2.5s ease-in-out;
+      }
+
+      .custom-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .custom-items div {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px 25px;
+        border-radius: 15px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .custom-items div:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>โลกของการตกแต่งคีย์บอร์ด</h1>
+      <p>
+        การแต่งคีย์บอร์ดไม่ใช่แค่เรื่องของดีไซน์ แต่ยังสะท้อนตัวตนและสไตล์ของผู้ใช้
+        ไม่ว่าจะเป็นการเลือก Keycap ที่โดดเด่น Switch ที่ให้สัมผัสเฉพาะตัว
+        หรือไฟ RGB ที่เพิ่มความเท่ในการใช้งาน
+      </p>
+      <div class="custom-items">
+        <div>Keycaps</div>
+        <div>Switches</div>
+        <div>Custom Cables</div>
+        <div>RGB Lighting</div>
+        <div>Case Mods</div>
+        <div>Lubing & Mods</div>
+      </div>
+    </div>
+  </body>
+</html>
